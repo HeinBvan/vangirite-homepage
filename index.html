@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vangirite | A Portfolio of Empowering Digital Brands</title>
+    <style>
+        /* --- Font Imports from Google Fonts --- */
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap');
+
+        /* --- Global Styles & Resets --- */
+        :root {
+            --primary-blue: #0A2342;
+            --text-grey: #333333;
+            --accent-gold: #D9A441;
+            --background-white: #FFFFFF;
+            --background-grey: #F4F4F4;
+            --font-heading: 'Merriweather', serif;
+            --font-body: 'Lato', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-grey);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* --- Section Styling --- */
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .section-white {
+            background-color: var(--background-white);
+        }
+
+        .section-grey {
+            background-color: var(--background-grey);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* --- Typography --- */
+        h1, h2 {
+            font-family: var(--font-heading);
+            color: var(--primary-blue);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Header / Navigation --- */
+        header {
+            padding: 20px;
+            background-color: var(--background-white);
+            border-bottom: 1px solid #eee;
+        }
+        
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 100px 20px;
+        }
+
+        .hero p {
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-gold);
+            color: var(--background-white);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        /* --- Portfolio Section --- */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .portfolio-item {
+            text-align: center;
+        }
+        
+        .portfolio-item .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background-color: #ccc;
+            border-radius: 10px;
+            margin: 0 auto 20px auto;
+            /* In the future, we'll replace this with an <img> tag */
+        }
+
+        .portfolio-item h3 {
+            font-family: var(--font-heading);
+            color: var(--text-grey);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .portfolio-item p {
+             font-size: 1rem;
+             margin-bottom: 15px;
+        }
+
+        .portfolio-item a {
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* --- Footer --- */
+        footer {
+            background-color: var(--primary-blue);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        
+        footer .copyright {
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .back-to-top {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            font-size: 2rem;
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header id="top">
+        <div class="container">
+            <a href="#" class="logo">Vangirite</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section-white hero">
+            <div class="container">
+                <h1>Vangirite: Building a Portfolio of Empowering Digital Brands.</h1>
+                <p>From personal finance to professional growth, we create digital tools and resources that guide people on their journey.</p>
+                <a href="#portfolio" class="cta-button">Explore Our Portfolio</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section section-grey">
+            <div class="container">
+                <h2>Our Portfolio of Brands</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="logo-placeholder"></div>
+                        <h3>The Crossroads Ledger</h3>
+                        <p>Guiding personal and professional transformation.</p>
+                        <a href="#">Learn More &gt;</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="logo-placeholder"></div>
+                        <h3>The Fiscal Path</h3>
+                        <p>Empowering your financial journey with clarity and control.</p>
+                        <a href="#">Learn More &gt;</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="logo-placeholder"></div>
+                        <h3>WhereToStudy.org</h3>
+                        <p>Your trusted global resource for higher education decisions.</p>
+                        <a href="#">Learn More &gt;</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="logo-placeholder"></div>
+                        <h3>GreatUserDocs.online</h3>
+                        <p>Showcasing the power of clear and helpful documentation.</p>
+                        <a href="#">Learn More &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="philosophy" class="section section-white">
+            <div class="container">
+                <h2>Our Philosophy</h2>
+                <p>At Vangirite, we believe that the right guidance and the right tools have the power to change lives. Our portfolio is built on this foundation: providing clear, practical, and empathetic resources for the pivotal moments in your career, finances, and education. We are committed to building a legacy of trust and empowerment, helping people worldwide navigate their journey with confidence.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><a href="mailto:info@vangirite.com">info@vangirite.com</a></p>
+            <p class="copyright">&copy; 2025 Vangirite (Pty) Ltd. All Rights Reserved.</p>
+            <a href="#top" class="back-to-top" title="Back to Top">^</a>
+        </div>
+    </footer>
+
+</body>
+</html>
